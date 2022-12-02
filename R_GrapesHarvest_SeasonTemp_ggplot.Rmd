@@ -32,7 +32,7 @@ Start GHD from 1901 to synchronize the time series with GST, since GST starts fr
 GHD <- GHD [!(GHD$Year.GHD<1901),]
 ```
 
-### All available region's GHD (Bordeaux, Burgundy, Champagne 1, Low Loire Valley, Spain Switzerland)
+### The regions for which GHDs are available, are Bordeaux, Burgundy, Champagne 1, Low Loire Valley, Spain and Switzerland
 
 ```{r warning=FALSE, message=FALSE, echo=FALSE, fig.align='center', fig.height=5, fig.width=9}
 ggplot(GHD, aes(x=GHD$Year.GHD))+
@@ -58,7 +58,7 @@ ggplot(GHD, aes(x=GHD$Year.GHD))+
 
 ## GST(mean of tmax from Apri-Aug) and GHD of Bordeaux
 
-The increasing trend of mean summer temperature coincides early grapes harvest dates at Bordeaus region.
+An increasing trend of mean summer temperature coincides early grapes harvest dates at Bordeaus region.
 
 ```{r fig.align='center', fig.height=5, fig.width=9}
 year <- Bor_tmax$Year
